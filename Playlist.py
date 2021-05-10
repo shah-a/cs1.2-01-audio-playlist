@@ -51,8 +51,8 @@ class Playlist:
 
     def print_tracks(self):
         current = self.__first_track
-        count = 1
+        count = 0
         while current != None:
+            count += 1
             print(f"{count}. {current.get_title()}")
             current = current.get_next_track()
-            count += 1

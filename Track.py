@@ -1,7 +1,6 @@
 """Node class."""
 
 class Track:
-
     def __init__(self, title):
             self.__title = title.title()
             self.__next_track = None
@@ -16,7 +15,7 @@ class Track:
         self.__title = title.title()
 
     def set_next_track(self, next_title):
-        self.__next_track = next_title.title()
+        self.__next_track = next_title
 
     def __str__(self):
         return self.__title
